@@ -1,0 +1,116 @@
+* { /*Configurações globais das CSS*/
+    
+    /*RESET CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-45deg, #fff3f2, #f8f6ff);
+    background-attachment: fixed;
+
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+#title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 4%;
+    letter-spacing: -2px;
+    display: block;
+    line-height: 1.2;
+}
+
+.subtitles {
+    border: 3.6px solid #476ECC;
+    border-radius: 6px;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #476ECC;
+    padding: 10px;
+    margin-bottom: 4%;
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /*Padrão para todos os títulos*/
+    font-family: monospace;
+    font-weight: 600;
+    margin-bottom: 4%;
+}
+
+span {
+    font-family: monospace;
+    font-size: 1.2em;
+    line-height: 2;
+    display: block;
+    margin-bottom: 2%;
+    display: block;
+}
+
+#campo {
+    border-radius: 100px;
+    border: 1px solid;
+    border-color: #D9D9D9;
+    height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    margin-bottom: 4%;
+    width: 200px;
+    height: 40px;
+}
+
+#containers-check-box {
+    margin-bottom: 2%;
+}
+
+.container-check-box {
+    display: block;
+}
+
+.check-box {
+    margin-right: 8px;  
+}
+
+.text-check-box {
+    display: inline-block;
+}
+
+#cor-select {
+    border: none;
+    padding: 2px;
+    background-color: transparent;
+}
+
+#bt {
+    border: none;
+    border-radius: 100px;
+    padding: 8px 20px 8px 20px;
+    background-color: #ff8598;
+    color: white;
+    font-family: monospace;
+}
+
+#bt:hover {
+    border: none;
+    border-radius: 100px;
+    padding: 8px 20px 8px 20px;
+    background-color: #ffa7b4;
+    color: white;
+    font-family: monospace;
+    transition: 0.4s;
+}
+
+#file {
+    font-family: monospace;
+    font-size: 0.8em;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intermediário</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;600;800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    </style>
+
+</head>
+
+<body>
+
+    <div id="title">Alguns tipos <br> de inputs</div>
+
+    <form>
+        <!--(form) para validar o formulário-->
+
+        <div class="subtitles">Input tipo Text</div>
+        <div class="container">
+            <span>Campo para inserir informações.</span>
+            <input id="campo" type="text">
+        </div>
+
+        <!--Inputs check lists-->
+
+        <div class="subtitles">Input tipo Checklist / estilo quadrado</div>
+
+        <div id="containers-check-box">
+            <div class="container-check-box">
+                <input class="check-box" type="checkbox">
+                <span class="text-check-box">Checkbox desmarcado por padrão.</span>
+            </div>
+
+            <div class="container-check-box">
+                <input class="check-box" type="checkbox" checked>
+                <span class="text-check-box">Checkbox marcado por padrão.</span>
+            </div>
+        </div>
+
+        <div class="subtitles">Input tipo Radio / estilo redondo</div>
+        <p>Radio desmarcado por padrão.</p>
+        <input type="radio">
+
+        <p>Radio marcado por padrão.</p>
+        <input type="radio" checked>
+
+        <div class="subtitles">Input tipo Radio / marque apenas uma opção</div>
+        <p>Marcar somente uma opção.</p>
+
+        <div id="force-block">
+            <input class="inline" type="radio" name="gender" checked>
+            <h3>Masculino</h3>
+            <input class="inline" type="radio" name="gender">
+            <h3>Feminino</h3>
+        </div>
+
+        <!--Input selecionar cores-->
+
+        <div class="subtitles">Input Colors</div>
+        <p>Campo para selecionar cor.</p>
+        <input type="color" value="#fedc5a" id="cor-select">
+        <!--(value) determina uma cor para vir de padrão-->
+
+        <!--Input data-->
+
+        <div class="subtitles">Input de Data</div>
+        <p>Campo para selecionar data.</p>
+        <input type="date" id="campo">
+
+        <div class="subtitles">Input de Data e Local</div>
+        <p>Campo para selecionar data e local.</p>
+        <input type="datetime-local" id="campo">
+
+        <!--Input e-mail-->
+
+        <div id="force-block">
+            <div class="subtitles">Input de Email</div>
+            <p>Campo para selecionar email.</p>
+            <input class="inline" type="email" id="campo">
+            <input class="inline" type="submit" value="Enviar" id="bt">
+            <!--botão para enviar-->
+        </div>
+
+        <!--Input file-->
+
+        <div class="subtitles">Input File</div>
+        <p>Campo para inserir um arquivo dentro do formulário.</p>
+        <input type="file" accept="image/png" id="file">
+        <!--(image/png) só vai aceitar arquivos .png-->
+
+        <!--Input month-->
+
+        <div class="subtitles">Input Month</div>
+        <p>Campo para inserir mês.</p>
+        <input type="month" id="campo">
+
+        <!--Input number-->
+
+        <div class="subtitles">Input Number</div>
+        <p>Campo para inserir apenas números.</p>
+        <input type="number" step="1" id="campo">
+        <!--(step) para mudar os números através da seta-->
+
+        <!--Input password-->
+
+        <div class="subtitles">Input Password</div>
+        <p>Campo para inserir senha.</p>
+        <input type="password" id="campo">
+
+        <!--Input password-->
+
+        <div class="subtitles">Input Reset</div>
+        <p>Campo para limpar todo formulário.</p>
+        <input type="reset" id="bt">
+
+        <!--Input button-->
+
+        <div class="subtitles">Input Button</div>
+        <p>Cria um botão muito utilizado no JavaScript, para você fazer o que quiser.</p>
+        <input type="button" value="Salvar" id="bt">
+
+        <!--Input search-->
+
+        <div class="subtitles">Input Search</div>
+        <p>Campo para fazer buscas no site.</p>
+        <input type="search" id="campo">
+
+        <!--Input telefone-->
+
+        <div class="subtitles">Input Telefone</div>
+        <p>Campo para inserir número de telefone.</p>
+        <input type="tel" id="campo">
+
+        <!--Input time-->
+
+        <div class="subtitles">Input Time</div>
+        <p>Campo para inserir horas e minutos.</p>
+        <input type="time" id="campo">
+
+        <!--Input url-->
+
+        <div class="subtitles">Input URL</div>
+        <p>Campo para inserir um link de site.</p>
+        <input type="url" id="campo">
+
+        <!--Input week-->
+
+        <div class="subtitles">Input Week</div>
+        <p>Campo para inserir semana e o número de semanas durante o ano.</p>
+        <input type="week" id="campo">
+
+        <!--Input range-->
+
+        <div class="subtitles">Input Range</div>
+        <p>Campo para inserir tipo uma barra de volume.</p>
+        <input type="range" min="0" max="100" value="0">
+
+    </form>
+</body>
+
+</html>
+
+<!--TIPOS DE INPUT
+
+    button - Define um botão clicável, usado principalmente com um Java Script para ativar um script
+
+    checkbox - Define uma caixa de seleção para seleção de várias opções
+
+    color - Define um seletor de cores em hexadecimal
+
+    date - Define um controle para selecionar data (ano, mês e dia (sem hora))
+
+    datetime-local - Define um controle para selecionar data e hora (ano, mês, dia e hora (sem fuso horário))
+
+    email - Define um campo para entrar com o endereço de e-mail
+
+    file - Define um campo para entrar com endereço de e-mail
+
+    hidden - Define um campo oculto
+
+    image - Define uma imagem como o botão de envio
+
+    month - Define um controle para selecionar mês e ano (sem fuso horário)
+
+    number - Define um campo para selecionar um número inteiro
+
+    password - Define um campo para senha
+
+    radio - Define um botão de seleção para seleção única
+
+    range - Define um controle de intervalo (como um controle deslisante)
+
+    reset - Define um botão para reiniciar o preenchimento do formulário
+
+    search - Define um campo de texto para inserir uma string de pesquisa
+
+    submit - Define um botão para enviar os dados do formulário
+
+    tel - Define um campo para inserir um numero de telefone
+
+    text - Input padrão. Define um campo de texto de linha única
+
+    time - Define um controle para inserir um horário (sem fuso horário)
+
+    url - Define um campo para inserir uma url
+
+    week - Define um controle para selecionar semana e ano (sem fuso horário)
