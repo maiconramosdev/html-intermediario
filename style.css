@@ -57,10 +57,12 @@ span {
     display: block;
 }
 
+/*Input campo de texto**/
+
 #campo {
     border-radius: 100px;
-    border: 1px solid;
-    border-color: #D9D9D9;
+    border: 2px solid;
+    border-color: #cacaca;
     height: 30px;
     padding: 10px;
     text-decoration: none;
@@ -68,6 +70,8 @@ span {
     width: 200px;
     height: 40px;
 }
+
+/*Inputs check lists*/
 
 #containers-check-box {
     margin-bottom: 2%;
@@ -85,19 +89,72 @@ span {
     display: inline-block;
 }
 
-#cor-select {
+#containers-radio {
+    margin-bottom: 2%;
+}
+
+.container-check-radio {
+    display: block;
+}
+
+.check-radio {
+    margin-right: 8px;  
+}
+
+.text-check-radio {
+    display: inline-block;
+}
+
+#containers-genders {
+    margin-bottom: 2%;
+}
+
+.container-gender {
+    display: block;
+}
+
+.gender-people {
+    margin-right: 8px;  
+}
+
+.text-gender {
+    display: inline-block;
+}
+
+/*Input selecionar cores*/
+
+#container-color {
+    display: block;
+    margin-bottom: 2%;
+}
+
+.color {
     border: none;
     padding: 2px;
     background-color: transparent;
 }
 
-#bt {
+.text-color {
+    display: inline-block;
+}
+
+/*Input data, e-mail e demais campos*/
+
+#campo {
+    display: block;
+}
+
+/*Input e-mail*/
+
+#bt-email {
     border: none;
     border-radius: 100px;
     padding: 8px 20px 8px 20px;
     background-color: #ff8598;
     color: white;
     font-family: monospace;
+    display: block;
+    margin-bottom: 4%;
 }
 
 #bt:hover {
@@ -110,7 +167,11 @@ span {
     transition: 0.4s;
 }
 
+/*Input file*/
+
 #file {
     font-family: monospace;
     font-size: 0.8em;
+    display: block;
+    margin-bottom: 4%;
 }

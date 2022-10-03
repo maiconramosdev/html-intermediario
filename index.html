@@ -20,9 +20,10 @@
     <div id="title">Alguns tipos <br> de inputs</div>
 
     <form>
-        <!--(form) para validar o formulário-->
+        <!--Input campo de texto-->
 
         <div class="subtitles">Input tipo Text</div>
+
         <div class="container">
             <span>Campo para inserir informações.</span>
             <input id="campo" type="text">
@@ -45,60 +46,80 @@
         </div>
 
         <div class="subtitles">Input tipo Radio / estilo redondo</div>
-        <p>Radio desmarcado por padrão.</p>
-        <input type="radio">
 
-        <p>Radio marcado por padrão.</p>
-        <input type="radio" checked>
+        <div id="containers-check-radio">
+            <div class="container-check-radio">
+                <input class="check-radio" type="radio">
+                <span class="text-check-radio">Radio desmarcado por padrão.</span>
+            </div>
+
+            <div class="container-check-radio">
+                <input class="check-radio" type="radio" checked>
+                <span class="text-check-radio">Radio marcado por padrão.</span>
+            </div>
+        </div>
 
         <div class="subtitles">Input tipo Radio / marque apenas uma opção</div>
-        <p>Marcar somente uma opção.</p>
 
-        <div id="force-block">
-            <input class="inline" type="radio" name="gender" checked>
-            <h3>Masculino</h3>
-            <input class="inline" type="radio" name="gender">
-            <h3>Feminino</h3>
+        <span>Marcar somente uma opção:</span>
+
+        <div id="containers-genders">
+            <div class="container-gender">
+                <input class="gender-people" type="radio" name="gender" checked>
+                <span class="text-gender">Masculino</span>
+            </div>
+
+            <div class="container-gender">
+                <input class="gender-people" type="radio" name="gender">
+                <span class="text-gender">Feminino</span>
+            </div>
         </div>
 
         <!--Input selecionar cores-->
 
         <div class="subtitles">Input Colors</div>
-        <p>Campo para selecionar cor.</p>
-        <input type="color" value="#fedc5a" id="cor-select">
+
+        <div id="container-color">
+            <span class="text-color">Campo para selecionar cor:</span>
+            <input class="color" type="color" value="#fedc5a">
+        </div>
         <!--(value) determina uma cor para vir de padrão-->
 
         <!--Input data-->
 
         <div class="subtitles">Input de Data</div>
-        <p>Campo para selecionar data.</p>
+
+        <span>Campo para selecionar data.</span>
         <input type="date" id="campo">
 
         <div class="subtitles">Input de Data e Local</div>
-        <p>Campo para selecionar data e local.</p>
+
+        <span>Campo para selecionar data e local.</span>
         <input type="datetime-local" id="campo">
 
         <!--Input e-mail-->
 
-        <div id="force-block">
-            <div class="subtitles">Input de Email</div>
-            <p>Campo para selecionar email.</p>
-            <input class="inline" type="email" id="campo">
-            <input class="inline" type="submit" value="Enviar" id="bt">
-            <!--botão para enviar-->
-        </div>
+        <div class="subtitles">Input de Email</div>
+
+        <span>Campo para selecionar email.</span>
+        <input class="inline" type="email" id="campo" value="Seu melhor e-mail aqui...">
+        <input class="inline" type="submit" value="Enviar" id="bt-email">
+        <!--botão para enviar-->
+
 
         <!--Input file-->
 
         <div class="subtitles">Input File</div>
-        <p>Campo para inserir um arquivo dentro do formulário.</p>
+
+        <span>Campo para inserir um arquivo dentro do formulário.</span>
         <input type="file" accept="image/png" id="file">
         <!--(image/png) só vai aceitar arquivos .png-->
 
         <!--Input month-->
 
         <div class="subtitles">Input Month</div>
-        <p>Campo para inserir mês.</p>
+        
+        <span>Campo para inserir mês.</span>
         <input type="month" id="campo">
 
         <!--Input number-->
